@@ -65,7 +65,7 @@ var chatServer = require('./backend/chatServer/chatServer')(server);
 /////////////////////////////////////////////////////////////////
 // START THE SERVER /////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
-server.listen(process.env.PORT || 3000), function() {
+server.listen(process.env.PORT || 3000, function() {
   'use strict';
   console.log(chalk.green('Express server listening on port ' + process.env.PORT || 3000));
 });
