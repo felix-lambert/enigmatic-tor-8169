@@ -30,7 +30,6 @@ module.exports = function(server) {
     });
 
     socket.on('sendLike', function(user) {
-      console.log('__________SEND LIKE___________');
       io.sockets.emit('receiveLike', user);
     });
 
